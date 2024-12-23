@@ -749,7 +749,9 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  width: 240px;
+  height: 180px;
+  object-fit: contain;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
@@ -956,7 +958,8 @@ main {
 .project-img {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 300px;
+  object-fit: contain;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -1024,6 +1027,17 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+}
+
+.timeline-text {
+  list-style-type: disc;    /* Shows bullet points (circles) */
+  margin: 1rem 0;           /* Some top and bottom spacing around the list */
+  padding-left: 1.5rem;     /* Indent so bullets aren’t flush against the edge */
+  line-height: 1.6;         /* More line spacing for readability */
+}
+
+.timeline-text li {
+  margin-bottom: 0.75rem;   /* Space between bullet points */
 }
 
 
@@ -1248,7 +1262,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .project-img,
-  .blog-banner-box { height: auto; }
+  .blog-banner-box { height: auto; width: auto; }
 
 }
 
